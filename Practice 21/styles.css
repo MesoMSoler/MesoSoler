@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+}
+
+
+.logo-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 10px;
+    margin-top: 65px;
+    margin-left: 270px;
+    margin-right: 15px;
+    margin-bottom: 140px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.summary h1 {
+    font-size: 60px;
+    width: 570px;
+    color:rgb(20, 20, 37);
+}
+
+.summary p {
+    font-size: 20px;
+    width: 640px;
+    color:rgb(46, 46, 49);
+    opacity: 0.8;
+}
+
+
+.summary button {
+    color: white;
+    background-color: dodgerblue;
+    padding: 25px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s; 
+    font-size: 20px;
+    box-shadow:
+  1.5px 2.8px 2.2px rgba(0, 0, 0, 0.197),
+  3.7px 6.7px 5.3px rgba(0, 0, 0, 0.245),
+  6.9px 12.5px 10px rgba(0, 0, 0, 0.263),
+  12.3px 22.3px 17.9px rgba(0, 0, 0, 0.26),
+  23px 41.8px 33.4px rgba(0, 0, 0, 0.237),
+  55px 100px 80px rgba(0, 0, 0, 0.19)
+;
+}
+
+.summary button:hover {
+    color:dodgerblue;
+    background-color: white;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+    border-radius: 12px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 90px;
+    z-index: 2;
+    position: relative;
+    top: 200px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    padding: 55px; 
+    text-align: center;
+    box-shadow:
+  1.5px 2.8px 2.2px rgba(0, 0, 0, 0.197),
+  3.7px 6.7px 5.3px rgba(0, 0, 0, 0.245),
+  6.9px 12.5px 10px rgba(0, 0, 0, 0.263),
+  12.3px 22.3px 17.9px rgba(0, 0, 0, 0.26),
+  23px 41.8px 33.4px rgba(0, 0, 0, 0.237),
+  55px 100px 80px rgba(0, 0, 0, 0.19)
+;
+}
+
+.card h1 {
+    font-size: 80px;
+}
+
+.card p {
+   font-size: 25px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   opacity: 0.9;
+   color: rgb(71, 71, 71);
+}
+
+#first {
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}
+
+.card1, .card3 {
+    color: black;
+    background-color: white;
+}
+
+.card2 {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.button1, .button3 {
+    color: dodgerblue;
+    background-color: rgb(211, 211, 211);
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button2 {
+    color: dodgerblue;
+    background-color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button1:hover {
+    color:rgb(238, 238, 238);
+   background-color: dodgerblue;
+}
+
+.button3:hover {
+   color:rgb(238, 238, 238);
+   background-color: dodgerblue;
+}
+
+.button2:hover {
+    color: white;
+    background-color: rgb(21, 21, 94);
+}
+
+.footer {
+   width: 100%;
+   height: 45vh;
+   color: white;
+   background-color: rgb(90, 90, 190);
+}
+
+
+.trueAll {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 300px;
+}
+
+.explaination {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+span {
+    color: rgb(0, 128, 255);
+}
+
+.realCountDown {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.realCountDown .num {
+    font-size: 45px;
+}
+
+.realCountDown .text {
+ font-size: 25px;
+ color: rgb(245, 245, 245);
+ opacity: 0.9;
+}
+
+#day-box, #hr-box, #min-box, #sec-box {
+    color: white;
+    background-color: rgb(119, 119, 187);
+    border-radius: 12px; 
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 15px;
+}
+
+.box {
+    margin: 0 10px;
+}
+
+.button4 {
+    color: white;
+    background-color: dodgerblue;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s; 
+}
+
+.button4:hover {
+    color: dodgerblue;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card {
+        width: 800px;
+    }
+    .button1, .button2, .button3 {
+        margin-left: 0;
+    }
+
+    .button1, .button3 {
+        color: dodgerblue;
+        background-color: rgb(211, 211, 211);
+        padding: 15px 25px;
+        font-size: 25px;
+        border: none;
+        border-radius: 12px;
+        transition: 0.3s;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .button2 {
+        color: dodgerblue;
+    background-color: white;
+    padding: 15px 25px;
+    font-size: 25px;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s; 
+    cursor: pointer;
+    transition: 0.2s;
+    }
+
+    .logo-name {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 10px;
+        margin-top: 65px;
+        margin-left: 60px;
+        margin-right: 15px;
+        margin-bottom: 140px;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .summary {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .footer {
+        width: 100%;
+        height: 55vh;
+        color: white;
+        background-color: rgb(90, 90, 190);
+     }
+
+
+    .trueAll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .explaination {
+        font-size: 25px;
+    }
+
+}
