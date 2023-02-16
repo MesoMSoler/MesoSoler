@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.navbar {
+    background:rgba(0,0,0,0.7) url("https://img.freepik.com/premium-photo/top-view-desk-flat-lay-background-with-computer-laptop-office-equipment-empty-work-area-copy-space-concept_619210-154.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    width: 100%;
+    background-blend-mode: darken;
+    z-index: -10;
+}
+
+nav {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    color: dodgerblue;
+}
+
+.card-1 {
+    width: 40%;
+    border-radius: 12px;
+    padding: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    z-index: 10;
+    top: -50px;
+    background-color: white;
+    text-align: center;
+}
+
+.card-1, .first-summary {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.buttons button {
+    border: none;
+    padding: 15px;
+    font-size: 14px;
+    background-color: rgb(48, 170, 179);
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.card-2 {
+    width: 40%;
+    border-radius: 12px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    z-index: 10;
+    top: -50px;
+    background-color: white;
+    text-align: center;
+}
+
+.all-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.money, .backers {
+    border-right: 1px grey solid;
+    padding-right: 45px;
+}
+
+.card-2 p {
+    color: rgb(145, 145, 145);
+    opacity: 0.8;
+}
+
+.card-3 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    z-index: 10;
+    top: -50px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.second-summary p {
+   color: rgb(145, 145, 145);
+   opacity: 0.8
+}
+
+.card {
+    border: 1px rgb(87, 87, 87) solid;
+    border-radius: 11px;
+    margin: 10px 0;
+    padding: 30px;
+}
+
+.firstLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firstLine p {
+    color: rgb(48, 170, 179);
+    font-weight: bold;
+}
+
+.secondLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.numbers {
+    display: flex;
+    align-items: center;
+}
+
+.numbers p {
+    color: rgb(145, 145, 145);
+    margin: 0 10px;
+}
+
+button:not(.buttonn) {
+    border: none;
+    color: white;
+    background-color:rgb(48, 170, 179);
+    padding: 20px;
+    font-size: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+button:not(.buttonn):hover {
+    color: rgb(48, 170, 179);
+    background-color:white;
+    border: 1px rgb(151, 151, 151) solid;
+}
+
+.buttonn {
+    border: none;
+    color: white;
+    background-color:rgb(128, 128, 128);
+    padding: 20px;
+    font-size: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.cardInBox3 {
+    opacity: 0.4;
+}
+
+#innerCard {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    z-index: 10;
+    top: -50px;
+    margin-top: 20px;
+}
+
+.innerCard p {
+    color:rgb(128, 128, 128);
+    opacity: 0.8;
+}
+
+.card2 {
+    border: 1px rgb(87, 87, 87) solid;
+    border-radius: 11px;
+    margin: 10px 0;
+    padding: 20px;
+
+}
+
+.topSummary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topSummary p {
+    color:rgb(48, 170, 179);
+}
+
+.bottomPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardInnerBox2 {
+    border: 1px solid rgb(48, 170, 179); 
+}
+
+.cardInnerBox4 {
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 760px) {
+
+    .second-summary {
+        text-align: center;
+    }
+    .card-2, .money, .backers, .daysLeft {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .all-cards {
+        flex-direction: column;
+        text-align: center;
+        margin: 4px 0;
+     }
+
+     .money, .backers {
+        border-bottom: 1px solid black;
+        border-right: none;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 80%;
+        text-align: center;
+        flex-direction: column;
+        padding-right: 0px;
+    
+     }
+
+
+     .firstLine {
+        flex-direction: column;
+        margin: 1rem;
+     }
+
+     .firstLine p {
+        margin: 1px 0;
+        font-size: 15px; 
+     }
+
+     .firstLine h1 {
+        margin: 1px 0;
+        font-size: 20px; 
+     }
+
+     .secondLine {
+        flex-direction: column;
+     }
+
+     .button {
+        margin-top: 10px;
+        margin-left: -30px;
+        padding: 10px;
+        font-size: 6px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.1s;
+
+     }
+
+     .buttonn {
+        margin-left: -90px;
+        margin-top: 10px;
+     }
+
+     .numbers, .button, .buttonn {
+        margin-right: auto;
+     }
+}
+

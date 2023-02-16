@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+   background-color: hsl(228, 21%, 14%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   font-family: 'Montserrat', sans-serif; 
+}
+
+.container {
+    width: 40%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color:hsl(228, 44%, 42%);
+    border-radius: 8px;
+}
+
+.searchBar i {
+   margin-left: 30px;
+}
+
+.bar {
+  border: none;
+  width: 620px;
+  height: 50px;
+  color: white;
+  background-color:hsl(228, 44%, 42%);
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.bar:focus {
+   outline: none;
+}
+
+.buttonSearch {
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.buttonSearch:hover {
+    color: dodgerblue;
+    background-color: white;
+}
+
+
+.bar::placeholder {
+   color: white; 
+   opacity: 0.8;
+   margin-left: 90px;
+}
+
+.info {
+    border-radius: 12px;
+    background-color:hsl(228, 44%, 42%);
+    padding: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: top;
+}
+
+img {
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 35px;
+    margin-top: 10px;
+}
+
+.profileIntro {
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+
+.profileStatus p {
+    margin-left: 60px;
+}
+
+.darkBox {
+    border: none;
+    border-radius: 12px;
+    background-color:hsl(228, 21%, 14%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px; 
+}
+
+
+.contactInfo1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.contactInfo2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -15px;
+}
+
+
